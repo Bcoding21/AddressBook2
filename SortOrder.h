@@ -6,7 +6,6 @@ class SortOrder
 {
 
 public:
-
-	virtual void sort(std::map<std::string, Person>&) = 0;
+	virtual std::map<std::string, Person> getSortedEntries(const std::map<std::string, Person>&) = 0;
 };
 
