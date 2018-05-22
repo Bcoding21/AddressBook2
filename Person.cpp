@@ -1,6 +1,6 @@
 #include "Person.h"
 
-std::string NO_VAL = "empty";
+const std::string Person::NO_VAL = "empty";
 
 Person::Person():
 	fName(NO_VAL),
