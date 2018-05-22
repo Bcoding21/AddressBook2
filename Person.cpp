@@ -1,6 +1,5 @@
 #include "Person.h"
 
-
 std::string NO_VAL = "empty";
 
 Person::Person():
@@ -22,6 +21,12 @@ Person::Person(const Person& p) :
 	lName(p.lName),
 	phoneNumber(p.phoneNumber)
 {
+}
+
+bool Person::operator<(const Person& person) const {
+	return this->lName < person.lName ||
+		this->fName < person.fName ||
+		this->phoneNumber < person.phoneNumber;
 }
 
 std::string Person::getFirstName() const { return fName; }

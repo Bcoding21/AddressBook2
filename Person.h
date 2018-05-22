@@ -21,6 +21,8 @@ public:
 	std::string getLastName() const;
 
 	std::string getPhoneNumber() const;
+
+	bool operator< (const Person&) const;
 	
 };
 
