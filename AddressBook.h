@@ -14,7 +14,6 @@ class AddressBook
 private:
 	std::map<std::string, Person> entries;
 	Order order;
-	SortOrder* sortedOrder;
 	
 public:
 
